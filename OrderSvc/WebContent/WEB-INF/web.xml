@@ -1,0 +1,30 @@
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>Order Service</display-name>
+    
+   <servlet>
+   
+        <servlet-name>Jersey1Config</servlet-name>
+   
+        <servlet-class>com.wordnik.swagger.jaxrs.config.DefaultJaxrsConfig</servlet-class>
+                <init-param>
+                <param-name>api.version</param-name>
+                <param-value>0.0.1-SNAPSHOT</param-value>
+                </init-param>
+        
+                <init-param>
+                <param-name>swagger.api.basepath</param-name>
+                <param-value>http://localhost:8080/order-svc/api</param-value>
+                </init-param>
+                
+                <init-param>
+                        
+                        <param-name>scan.all.resources</param-name>
+                        <param-value>true</param-value>
+                
+                </init-param>
+        
+                <load-on-startup>1</load-on-startup>
+                
+    </servlet>
+  
+</web-app>
