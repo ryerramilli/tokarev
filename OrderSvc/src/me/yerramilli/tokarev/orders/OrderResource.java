@@ -31,7 +31,7 @@ public class OrderResource {
 	public OrderModel listOrders() {
 		
 		OrderModel order = new OrderModel();
-		order.setOdernumber("Your Orders here :-)");
+		order.setOrderNumber("Your Orders here :-)");
 		return order;
 		
 	}
